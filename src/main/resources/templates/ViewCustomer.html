@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViewCustomer</title>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <h1><span th:text="${customer.id}"></span>: <span th:text="${customer.firstName}"></span> <span th:text="${customer.lastName}"></span></h1>
+            <p><span th:text="${customer.email}"></span></p>
+            <p><span th:text="${customer.phone}"></span></p>
+        </div>
+    </div>
+    <h1><a href="/Customers">Customers</a></h1>
+</body>
+</html>
